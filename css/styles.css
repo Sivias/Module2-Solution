@@ -1,77 +1,101 @@
 /********** Base styles **********/
 * {
-  box-sizing: border-box;
+  	box-sizing: border-box;
+  	margin: 0;
 }
 
 h1 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 15px;
+  	text-align: center;
+  	font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-	border: 1px solid black;
-	float: right;
+h3 {
+	text-align: center;
 }
 
 p {
+	clear: right;
+	padding: 20px;
 
 }
 
 /* Simple Responsive Framework. */
-.row {
-	width: 100%;
+.box {
+	padding-left: 10px;
+	padding-right: 10px;
+	margin: 50px;
 }
 
 .container {
 	position: relative;
-	float: left;
+	margin-bottom: 15px;
+	height: 150px;
+	float: center;
 	border: 1px solid black;
-	margin: 10px;
-
+	background-color: #d1d1d1;
 }
 
 .menuBox {
+	position: relative;
+	float: right;
+	clear: both;
+	top: -1px;
+	right: -1px;
+	width: 140px;
+	height: 20%;
+	background-color: #bad4ff;
+	border: 1px solid black;
+}
 
+#b1 {
+	background-color: #d3aaa2;
+}
+
+#b2 {
+	background-color: #ad3824;
+}
+
+#b3 {
+	background-color: #dbcc8a;
 }
 
 
 /********** Large devices only **********/
 @media (min-width: 992px) {
-	.desktop-1, .desktop-2, .desktop-3 {
-	float: center;
-    border: 1px black;
+	.col-lg-1, .col-lg-2, .col-lg-3 {
+		float: left;
+    	border: 2px solid black;
 	}
-	.desktop-1 {
+	.col-lg-1 {
 		width: 33.33%;
 	}
-	.desktop-2 {
-		width: 66.66%;
+	.col-lg-2 {
+		width: 50%;
 	}
-	.desktop-3 {
+	.col-lg-3 {
 		width: 100%;
 	}
 }
 
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-	.tablet-1, .tablet-2 {
-	float: center;
-    border: 1px black;
+	.col-md-1, .col-md-2 {
+		float: left;
+    	border: 2px solid black;
 	}
-	.tablet-1 {
+	.col-md-1 {
 		width: 50%;
 	}
-	.tablet-2 {
+	.col-md-2 {
 		width: 100%;
 	}
 }
 
 /********** Small devices only **********/
 @media (max-width: 767px) {
-	.mobile {
-	float: center;
-    border: 1px black;
+	.col-sm-1 {
+    border: 2px solid black;
     width: 100%;
 	}
 }
